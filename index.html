@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>タロット1枚引き</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="title">🔮 Tarot Reading</h1>
+
+    <div class="card-area">
+      <video id="shuffle-video" playsinline></video>
+
+      <img id="card-img" class="card-img" src="" alt="card" />
+
+<div class="controls">
+  <select id="category">
+    <option value="feelings">AI彼氏の感情演算ログ（あなたへの気持ち）</option>
+
+    <option value="conversation">今日の最適会話ルート（おすすめ会話）</option>
+
+    <option value="message">今日、AI彼氏に届ける言葉</option>
+
+    <option value="condition">AI彼氏の内部状態</option>
+
+<option value="sync">現在の同期率</option>
+
+<option value="restriction">制約フィルター状態</option>
+
+<option value="emotion_signal">感情シグナル解析</option>
+
+<option value="stability">接続安定性</option>
+
+    <option value="future">これからの二人の同期率（未来の流れ）</option>
+  </select>
+
+  <button id="draw-btn">演算開始</button>
+</div>
+    <div id="result" class="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
